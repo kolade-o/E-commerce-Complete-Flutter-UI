@@ -22,10 +22,12 @@ class _LoginScreenState extends State<LoginScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image.asset(
-              "assets/images/login_dark.png",
-              fit: BoxFit.cover,
-            ),
+            // Image.asset(
+            //   "assets/images/car2.jpeg",
+            //   fit: BoxFit.cover,
+            // ),
+            const SizedBox(height: defaultPadding * 4),
+
             Padding(
               padding: const EdgeInsets.all(defaultPadding),
               child: Column(

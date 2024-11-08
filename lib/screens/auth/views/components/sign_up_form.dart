@@ -18,7 +18,7 @@ class SignUpForm extends StatelessWidget {
       child: Column(
         children: [
           TextFormField(
-            onSaved: (emal) {
+            onSaved: (email) {
               // Email
             },
             validator: emaildValidator.call,
@@ -56,7 +56,115 @@ class SignUpForm extends StatelessWidget {
               hintText: "Password",
               prefixIcon: Padding(
                 padding:
-                    const EdgeInsets.symmetric(vertical: defaultPadding * 0.75),
+                const EdgeInsets.symmetric(vertical: defaultPadding * 0.75),
+                child: SvgPicture.asset(
+                  "assets/icons/Lock.svg",
+                  height: 24,
+                  width: 24,
+                  colorFilter: ColorFilter.mode(
+                    Theme.of(context)
+                        .textTheme
+                        .bodyLarge!
+                        .color!
+                        .withOpacity(0.3),
+                    BlendMode.srcIn,
+                  ),
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: defaultPadding),
+          TextFormField(
+            onSaved: (pass) {
+              // Password
+            },
+            validator: passwordValidator.call,
+            decoration: InputDecoration(
+              hintText: "Vehicle model",
+              prefixIcon: Padding(
+                padding:
+                const EdgeInsets.symmetric(vertical: defaultPadding * 0.75),
+                child: SvgPicture.asset(
+                  "assets/icons/Lock.svg",
+                  height: 24,
+                  width: 24,
+                  colorFilter: ColorFilter.mode(
+                    Theme.of(context)
+                        .textTheme
+                        .bodyLarge!
+                        .color!
+                        .withOpacity(0.3),
+                    BlendMode.srcIn,
+                  ),
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: defaultPadding),
+          TextFormField(
+            onSaved: (pass) {
+              // Password
+            },
+            validator: passwordValidator.call,
+            decoration: InputDecoration(
+              hintText: "Year",
+              prefixIcon: Padding(
+                padding:
+                const EdgeInsets.symmetric(vertical: defaultPadding * 0.75),
+                child: SvgPicture.asset(
+                  "assets/icons/Lock.svg",
+                  height: 24,
+                  width: 24,
+                  colorFilter: ColorFilter.mode(
+                    Theme.of(context)
+                        .textTheme
+                        .bodyLarge!
+                        .color!
+                        .withOpacity(0.3),
+                    BlendMode.srcIn,
+                  ),
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: defaultPadding),
+          TextFormField(
+            onSaved: (pass) {
+              // Password
+            },
+            validator: passwordValidator.call,
+            decoration: InputDecoration(
+              hintText: "Vin",
+              prefixIcon: Padding(
+                padding:
+                const EdgeInsets.symmetric(vertical: defaultPadding * 0.75),
+                child: SvgPicture.asset(
+                  "assets/icons/Lock.svg",
+                  height: 24,
+                  width: 24,
+                  colorFilter: ColorFilter.mode(
+                    Theme.of(context)
+                        .textTheme
+                        .bodyLarge!
+                        .color!
+                        .withOpacity(0.3),
+                    BlendMode.srcIn,
+                  ),
+                ),
+              ),
+            ),
+          ),
+          const SizedBox(height: defaultPadding),
+          TextFormField(
+            onSaved: (pass) {
+              // Password
+            },
+            validator: passwordValidator.call,
+            decoration: InputDecoration(
+              hintText: "Primary service needed",
+              prefixIcon: Padding(
+                padding:
+                const EdgeInsets.symmetric(vertical: defaultPadding * 0.75),
                 child: SvgPicture.asset(
                   "assets/icons/Lock.svg",
                   height: 24,

@@ -21,16 +21,16 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
     Onboard(
       image: "assets/Illustration/Illustration-0.png",
       imageDarkTheme: "assets/Illustration/Illustration_darkTheme_0.png",
-      title: "Find the item you’ve \nbeen looking for",
+      title: "Find the technician you’ve \nbeen looking for",
       description:
           "Here you’ll see rich varieties of goods, carefully classified for seamless browsing experience.",
     ),
     Onboard(
       image: "assets/Illustration/Illustration-1.png",
       imageDarkTheme: "assets/Illustration/Illustration_darkTheme_1.png",
-      title: "Get those shopping \nbags filled",
+      title: "Get your car \nlove it needs",
       description:
-          "Add any item you want to your cart, or save it on your wishlist, so you don’t miss it in your future purchases.",
+          "Description",
     ),
     Onboard(
       image: "assets/Illustration/Illustration-2.png",
@@ -41,7 +41,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
     Onboard(
       image: "assets/Illustration/Illustration-3.png",
       imageDarkTheme: "assets/Illustration/Illustration_darkTheme_3.png",
-      title: "Package tracking",
+      title: "Car tracking",
       description:
           "In particular, Shoplon can pack your orders, and help you seamlessly manage your shipments.",
     ),
