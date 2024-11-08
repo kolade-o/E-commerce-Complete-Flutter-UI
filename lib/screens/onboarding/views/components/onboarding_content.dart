@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../../constants.dart';
 
-class OnbordingContent extends StatelessWidget {
-  const OnbordingContent({
+class OnboardingContent extends StatelessWidget {
+  const OnboardingContent({
     super.key,
     this.isTextOnTop = false,
     required this.title,
@@ -21,7 +21,7 @@ class OnbordingContent extends StatelessWidget {
         const Spacer(),
 
         if (isTextOnTop)
-          OnbordTitleDescription(
+          OnboardTitleDescription(
             title: title,
             description: description,
           ),
@@ -35,7 +35,7 @@ class OnbordingContent extends StatelessWidget {
         ),
         if (!isTextOnTop) const Spacer(),
         if (!isTextOnTop)
-          const OnbordTitleDescription(
+          const OnboardTitleDescription(
             title: "Find the item you’ve \nbeen looking for",
             description:
                 "Here you’ll see rich varieties of goods, carefully classified for seamless browsing experience.",
@@ -47,8 +47,8 @@ class OnbordingContent extends StatelessWidget {
   }
 }
 
-class OnbordTitleDescription extends StatelessWidget {
-  const OnbordTitleDescription({
+class OnboardTitleDescription extends StatelessWidget {
+  const OnboardTitleDescription({
     super.key,
     required this.title,
     required this.description,

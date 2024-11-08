@@ -1,50 +1,51 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:shop/components/dot_indicators.dart';
-import 'package:shop/constants.dart';
-import 'package:shop/route/route_constants.dart';
+import 'package:eagle/components/dot_indicators.dart';
+import 'package:eagle/constants.dart';
+import 'package:eagle/route/route_constants.dart';
 
-import 'components/onbording_content.dart';
+import 'components/onboarding_content.dart';
 
-class OnBordingScreen extends StatefulWidget {
-  const OnBordingScreen({super.key});
+
+class OnBoardingScreen extends StatefulWidget {
+  const OnBoardingScreen({super.key});
 
   @override
-  State<OnBordingScreen> createState() => _OnBordingScreenState();
+  State<OnBoardingScreen> createState() => _OnBoardingScreenState();
 }
 
-class _OnBordingScreenState extends State<OnBordingScreen> {
+class _OnBoardingScreenState extends State<OnBoardingScreen> {
   late PageController _pageController;
   int _pageIndex = 0;
-  final List<Onbord> _onbordData = [
-    Onbord(
+  final List<Onboard> _onboardData = [
+    Onboard(
       image: "assets/Illustration/Illustration-0.png",
       imageDarkTheme: "assets/Illustration/Illustration_darkTheme_0.png",
       title: "Find the item you’ve \nbeen looking for",
       description:
           "Here you’ll see rich varieties of goods, carefully classified for seamless browsing experience.",
     ),
-    Onbord(
+    Onboard(
       image: "assets/Illustration/Illustration-1.png",
       imageDarkTheme: "assets/Illustration/Illustration_darkTheme_1.png",
       title: "Get those shopping \nbags filled",
       description:
           "Add any item you want to your cart, or save it on your wishlist, so you don’t miss it in your future purchases.",
     ),
-    Onbord(
+    Onboard(
       image: "assets/Illustration/Illustration-2.png",
       imageDarkTheme: "assets/Illustration/Illustration_darkTheme_2.png",
       title: "Fast & secure \npayment",
       description: "There are many payment options available for your ease.",
     ),
-    Onbord(
+    Onboard(
       image: "assets/Illustration/Illustration-3.png",
       imageDarkTheme: "assets/Illustration/Illustration_darkTheme_3.png",
       title: "Package tracking",
       description:
           "In particular, Shoplon can pack your orders, and help you seamlessly manage your shipments.",
     ),
-    Onbord(
+    Onboard(
       image: "assets/Illustration/Illustration-4.png",
       imageDarkTheme: "assets/Illustration/Illustration_darkTheme_4.png",
       title: "Nearby stores",
@@ -89,19 +90,19 @@ class _OnBordingScreenState extends State<OnBordingScreen> {
               Expanded(
                 child: PageView.builder(
                   controller: _pageController,
-                  itemCount: _onbordData.length,
+                  itemCount: _onboardData.length,
                   onPageChanged: (value) {
                     setState(() {
                       _pageIndex = value;
                     });
                   },
-                  itemBuilder: (context, index) => OnbordingContent(
-                    title: _onbordData[index].title,
-                    description: _onbordData[index].description,
+                  itemBuilder: (context, index) => OnboardingContent(
+                    title: _onboardData[index].title,
+                    description: _onboardData[index].description,
                     image: (Theme.of(context).brightness == Brightness.dark &&
-                            _onbordData[index].imageDarkTheme != null)
-                        ? _onbordData[index].imageDarkTheme!
-                        : _onbordData[index].image,
+                            _onboardData[index].imageDarkTheme != null)
+                        ? _onboardData[index].imageDarkTheme!
+                        : _onboardData[index].image,
                     isTextOnTop: index.isOdd,
                   ),
                 ),
@@ -109,7 +110,7 @@ class _OnBordingScreenState extends State<OnBordingScreen> {
               Row(
                 children: [
                   ...List.generate(
-                    _onbordData.length,
+                    _onboardData.length,
                     (index) => Padding(
                       padding: const EdgeInsets.only(right: defaultPadding / 4),
                       child: DotIndicator(isActive: index == _pageIndex),
@@ -121,7 +122,7 @@ class _OnBordingScreenState extends State<OnBordingScreen> {
                     width: 60,
                     child: ElevatedButton(
                       onPressed: () {
-                        if (_pageIndex < _onbordData.length - 1) {
+                        if (_pageIndex < _onboardData.length - 1) {
                           _pageController.nextPage(
                               curve: Curves.ease, duration: defaultDuration);
                         } else {
@@ -151,11 +152,11 @@ class _OnBordingScreenState extends State<OnBordingScreen> {
   }
 }
 
-class Onbord {
+class Onboard {
   final String image, title, description;
   final String? imageDarkTheme;
 
-  Onbord({
+  Onboard({
     required this.image,
     required this.title,
     this.description = "",

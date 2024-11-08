@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shop/components/network_image_with_loader.dart';
+import 'package:eagle/components/network_image_with_loader.dart';
 
 import '../../../../constants.dart';
 

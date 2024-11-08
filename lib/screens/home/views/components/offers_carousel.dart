@@ -1,11 +1,11 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:shop/components/Banner/M/banner_m_style_1.dart';
-import 'package:shop/components/Banner/M/banner_m_style_2.dart';
-import 'package:shop/components/Banner/M/banner_m_style_3.dart';
-import 'package:shop/components/Banner/M/banner_m_style_4.dart';
-import 'package:shop/components/dot_indicators.dart';
+import 'package:eagle/components/Banner/M/banner_m_style_1.dart';
+import 'package:eagle/components/Banner/M/banner_m_style_2.dart';
+import 'package:eagle/components/Banner/M/banner_m_style_3.dart';
+import 'package:eagle/components/Banner/M/banner_m_style_4.dart';
+import 'package:eagle/components/dot_indicators.dart';
 
 import '../../../../constants.dart';
 
@@ -26,7 +26,7 @@ class _OffersCarouselState extends State<OffersCarousel> {
   // Offers List
   List offers = [
     BannerMStyle1(
-      text: "New items with \nFree shipping",
+      text: "20% discount on \nYour First 3 orders",
       press: () {},
     ),
     BannerMStyle2(

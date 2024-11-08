@@ -1,7 +1,7 @@
+import 'package:eagle/theme/app_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:shop/route/route_constants.dart';
-import 'package:shop/route/router.dart' as router;
-import 'package:shop/theme/app_theme.dart';
+import 'package:eagle/route/route_constants.dart';
+import 'package:eagle/route/router.dart' as router;
 
 void main() {
   runApp(const MyApp());
@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       // Dark theme is inclided in the Full template
       themeMode: ThemeMode.light,
       onGenerateRoute: router.generateRoute,
-      initialRoute: onbordingScreenRoute,
+      initialRoute: onboardingScreenRoute,
     );
   }
 }

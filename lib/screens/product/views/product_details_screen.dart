@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:shop/components/buy_full_ui_kit.dart';
-import 'package:shop/components/cart_button.dart';
-import 'package:shop/components/custom_modal_bottom_sheet.dart';
-import 'package:shop/components/product/product_card.dart';
-import 'package:shop/constants.dart';
-import 'package:shop/screens/product/views/product_returns_screen.dart';
+import 'package:eagle/components/buy_full_ui_kit.dart';
+import 'package:eagle/components/cart_button.dart';
+import 'package:eagle/components/custom_modal_bottom_sheet.dart';
+import 'package:eagle/components/product/product_card.dart';
+import 'package:eagle/constants.dart';
+import 'package:eagle/screens/product/views/product_returns_screen.dart';
 
-import 'package:shop/route/screen_export.dart';
+import 'package:eagle/route/screen_export.dart';
 
 import 'components/notify_me_card.dart';
 import 'components/product_images.dart';

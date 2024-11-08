@@ -1,8 +1,8 @@
 import 'package:animations/animations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:shop/constants.dart';
-import 'package:shop/route/screen_export.dart';
+import 'package:eagle/constants.dart';
+import 'package:eagle/route/screen_export.dart';
 
 class EntryPoint extends StatefulWidget {
   const EntryPoint({super.key});
@@ -45,13 +45,7 @@ class _EntryPointState extends State<EntryPoint> {
         leading: const SizedBox(),
         leadingWidth: 0,
         centerTitle: false,
-        title: SvgPicture.asset(
-          "assets/logo/Shoplon.svg",
-          colorFilter: ColorFilter.mode(
-              Theme.of(context).iconTheme.color!, BlendMode.srcIn),
-          height: 20,
-          width: 100,
-        ),
+        title: const Text("EagleCare"),
         actions: [
           IconButton(
             onPressed: () {

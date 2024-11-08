@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:shop/route/screen_export.dart';
+import 'package:eagle/route/screen_export.dart';
 
 import '../../../../constants.dart';
 
@@ -17,15 +17,14 @@ class CategoryModel {
 }
 
 List<CategoryModel> demoCategories = [
-  CategoryModel(name: "All Categories"),
+  CategoryModel(name: "All Technicians"),
   CategoryModel(
-      name: "On Sale",
+      name: "Mechanics",
       svgSrc: "assets/icons/Sale.svg",
       route: onSaleScreenRoute),
-  CategoryModel(name: "Man's", svgSrc: "assets/icons/Man.svg"),
-  CategoryModel(name: "Woman’s", svgSrc: "assets/icons/Woman.svg"),
-  CategoryModel(
-      name: "Kids", svgSrc: "assets/icons/Child.svg", route: kidsScreenRoute),
+  CategoryModel(name: "Wiring", svgSrc: "assets/icons/Man.svg"),
+  CategoryModel(name: "Tow Truck", svgSrc: "assets/icons/Woman.svg"),
+
 ];
 // End For Preview
 

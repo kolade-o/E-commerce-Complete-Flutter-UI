@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:shop/components/Banner/S/banner_s_style_1.dart';
-import 'package:shop/components/Banner/S/banner_s_style_5.dart';
-import 'package:shop/constants.dart';
-import 'package:shop/route/screen_export.dart';
 
+import '../../../components/Banner/S/banner_s_style_1.dart';
+import '../../../components/Banner/S/banner_s_style_5.dart';
+import '../../../constants.dart';
+import '../../../route/route_constants.dart';
 import 'components/best_sellers.dart';
 import 'components/flash_sale.dart';
 import 'components/most_popular.dart';
