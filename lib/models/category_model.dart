@@ -20,26 +20,24 @@ final List<CategoryModel> demoCategoriesWithImage = [
 
 final List<CategoryModel> demoCategories = [
   CategoryModel(
-    title: "On sale",
+    title: "Shop - Coming Soon",
     svgSrc: "assets/icons/Sale.svg",
     subCategories: [
-      CategoryModel(title: "All Clothing"),
-      CategoryModel(title: "New In"),
-      CategoryModel(title: "Coats & Jackets"),
-      CategoryModel(title: "Dresses"),
-      CategoryModel(title: "Jeans"),
+      CategoryModel(title: "Tyres"),
+      CategoryModel(title: "Engine Parts"),
+      CategoryModel(title: "Body Parts"),
+      CategoryModel(title: "Interior")
     ],
   ),
   CategoryModel(
-    title: "Man’s & Woman’s",
+    title: "Mechanics",
     svgSrc: "assets/icons/Man&Woman.svg",
     subCategories: [
-      CategoryModel(title: "All Clothing"),
-      CategoryModel(title: "New In"),
-      CategoryModel(title: "Coats & Jackets"),
+      CategoryModel(title: "Rewiring mechanics"),
+      CategoryModel(title: "Engine specialists"),
     ],
   ),
-  CategoryModel(
+  /* CategoryModel(
     title: "Kids",
     svgSrc: "assets/icons/Child.svg",
     subCategories: [
@@ -48,12 +46,12 @@ final List<CategoryModel> demoCategories = [
       CategoryModel(title: "Coats & Jackets"),
     ],
   ),
-  CategoryModel(
+ CategoryModel(
     title: "Accessories",
     svgSrc: "assets/icons/Accessories.svg",
     subCategories: [
       CategoryModel(title: "All Clothing"),
       CategoryModel(title: "New In"),
     ],
-  ),
+  ),*/
 ];

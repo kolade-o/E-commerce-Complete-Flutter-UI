@@ -15,17 +15,17 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: SafeArea(
         child: CustomScrollView(
           slivers: [
-            const SliverToBoxAdapter(child: OffersCarouselAndCategories()),
-            const SliverToBoxAdapter(child: PopularProducts()),
-            const SliverPadding(
+            SliverToBoxAdapter(child: OffersCarouselAndCategories()),
+            SliverToBoxAdapter(child: PopularProducts()),
+            SliverPadding(
               padding: EdgeInsets.symmetric(vertical: defaultPadding * 1.5),
               sliver: SliverToBoxAdapter(child: FlashSale()),
             ),
-            SliverToBoxAdapter(
+            /*SliverToBoxAdapter(
               child: Column(
                 children: [
                   // While loading use 👇
@@ -65,7 +65,7 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
-            const SliverToBoxAdapter(child: BestSellers()),
+            const SliverToBoxAdapter(child: BestSellers()),*/
           ],
         ),
       ),

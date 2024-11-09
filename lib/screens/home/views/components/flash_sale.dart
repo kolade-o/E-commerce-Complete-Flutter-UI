@@ -24,16 +24,16 @@ class FlashSale extends StatelessWidget {
           press: () {},
         ),
         const SizedBox(height: defaultPadding / 2),
-        Padding(
+       /* Padding(
           padding: const EdgeInsets.all(defaultPadding),
           child: Text(
             "Flash sale",
             style: Theme.of(context).textTheme.titleSmall,
           ),
-        ),
+        ),*/
         // While loading show 👇
         // const ProductsSkelton(),
-        SizedBox(
+        /*SizedBox(
           height: 220,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
@@ -51,8 +51,8 @@ class FlashSale extends StatelessWidget {
                 brandName: demoFlashSaleProducts[index].brandName,
                 title: demoFlashSaleProducts[index].title,
                 price: demoFlashSaleProducts[index].price,
-                priceAfetDiscount:
-                    demoFlashSaleProducts[index].priceAfetDiscount,
+                priceAfterDiscount:
+                    demoFlashSaleProducts[index].priceAfterDiscount,
                 dicountpercent: demoFlashSaleProducts[index].dicountpercent,
                 press: () {
                   Navigator.pushNamed(context, productDetailsScreenRoute,
@@ -61,7 +61,7 @@ class FlashSale extends StatelessWidget {
               ),
             ),
           ),
-        ),
+        ),*/
       ],
     );
   }

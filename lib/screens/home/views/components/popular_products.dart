@@ -16,13 +16,13 @@ class PopularProducts extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         const SizedBox(height: defaultPadding / 2),
-        Padding(
+        /*Padding(
           padding: const EdgeInsets.all(defaultPadding),
           child: Text(
             "Popular products",
             style: Theme.of(context).textTheme.titleSmall,
           ),
-        ),
+        ),*/
         // While loading use 👇
         // const ProductsSkelton(),
         SizedBox(
@@ -43,7 +43,7 @@ class PopularProducts extends StatelessWidget {
                 brandName: demoPopularProducts[index].brandName,
                 title: demoPopularProducts[index].title,
                 price: demoPopularProducts[index].price,
-                priceAfetDiscount: demoPopularProducts[index].priceAfetDiscount,
+                priceAfterDiscount: demoPopularProducts[index].priceAfterDiscount,
                 dicountpercent: demoPopularProducts[index].dicountpercent,
                 press: () {
                   Navigator.pushNamed(context, productDetailsScreenRoute,

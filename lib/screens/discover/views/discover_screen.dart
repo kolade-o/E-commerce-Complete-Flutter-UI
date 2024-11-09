@@ -23,7 +23,7 @@ class DiscoverScreen extends StatelessWidget {
               padding: const EdgeInsets.symmetric(
                   horizontal: defaultPadding, vertical: defaultPadding / 2),
               child: Text(
-                "Filters",
+                "Categories",
                 style: Theme.of(context).textTheme.titleSmall,
               ),
             ),

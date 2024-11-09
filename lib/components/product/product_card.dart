@@ -10,13 +10,13 @@ class ProductCard extends StatelessWidget {
     required this.brandName,
     required this.title,
     required this.price,
-    this.priceAfetDiscount,
+    this.priceAfterDiscount,
     this.dicountpercent,
     required this.press,
   });
   final String image, brandName, title;
   final double price;
-  final double? priceAfetDiscount;
+  final double? priceAfterDiscount;
   final int? dicountpercent;
   final VoidCallback press;
 
@@ -84,12 +84,12 @@ class ProductCard extends StatelessWidget {
                         .titleSmall!
                         .copyWith(fontSize: 12),
                   ),
-                  const Spacer(),
-                  priceAfetDiscount != null
+                  /*const Spacer(),
+                  priceAfterDiscount != null
                       ? Row(
                           children: [
                             Text(
-                              "\$$priceAfetDiscount",
+                              "\$$priceAfterDiscount",
                               style: const TextStyle(
                                 color: Color(0xFF31B0D8),
                                 fontWeight: FontWeight.w500,
@@ -117,7 +117,7 @@ class ProductCard extends StatelessWidget {
                             fontWeight: FontWeight.w500,
                             fontSize: 12,
                           ),
-                        ),
+                        ),*/
                 ],
               ),
             ),

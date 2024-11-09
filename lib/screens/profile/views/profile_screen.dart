@@ -17,11 +17,11 @@ class ProfileScreen extends StatelessWidget {
       body: ListView(
         children: [
           ProfileCard(
-            name: "Sepide",
-            email: "theflutterway@gmail.com",
+            name: "Okanlanwo",
+            email: "okanlanwon@gmail.com",
             imageSrc: "https://i.imgur.com/IXnwbLk.png",
             // proLableText: "Sliver",
-            // isPro: true, if the user is pro
+            isPro: true,// if the user is pro
             press: () {
               Navigator.pushNamed(context, userInfoScreenRoute);
             },
@@ -48,24 +48,24 @@ class ProfileScreen extends StatelessWidget {
           ),
           const SizedBox(height: defaultPadding / 2),
           ProfileMenuListTile(
-            text: "Orders",
+            text: "History",
             svgSrc: "assets/icons/Order.svg",
             press: () {
               Navigator.pushNamed(context, ordersScreenRoute);
             },
           ),
-          ProfileMenuListTile(
+         /* ProfileMenuListTile(
             text: "Returns",
             svgSrc: "assets/icons/Return.svg",
             press: () {},
-          ),
+          ),*/
           ProfileMenuListTile(
             text: "Wishlist",
             svgSrc: "assets/icons/Wishlist.svg",
             press: () {},
           ),
           ProfileMenuListTile(
-            text: "Addresses",
+            text: "Cars",
             svgSrc: "assets/icons/Address.svg",
             press: () {
               Navigator.pushNamed(context, addressesScreenRoute);
